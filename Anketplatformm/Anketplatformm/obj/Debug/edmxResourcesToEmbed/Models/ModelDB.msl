@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB03ModelStoreContainer" CdmEntityContainer="DB03Entities">
+    <EntitySetMapping Name="Anket">
+      <EntityTypeMapping TypeName="DB03Model.Anket">
+        <MappingFragment StoreEntitySet="Anket">
+          <ScalarProperty Name="anketId" ColumnName="anketId" />
+          <ScalarProperty Name="anketKodu" ColumnName="anketKodu" />
+          <ScalarProperty Name="anketAdi" ColumnName="anketAdi" />
+          <ScalarProperty Name="anketKatId" ColumnName="anketKatId" />
+          <ScalarProperty Name="anketSoruSayisi" ColumnName="anketSoruSayisi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kategori">
+      <EntityTypeMapping TypeName="DB03Model.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="katId" ColumnName="katId" />
+          <ScalarProperty Name="katAdi" ColumnName="katAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kayit">
+      <EntityTypeMapping TypeName="DB03Model.Kayit">
+        <MappingFragment StoreEntitySet="Kayit">
+          <ScalarProperty Name="kayitId" ColumnName="kayitId" />
+          <ScalarProperty Name="kayitAnketId" ColumnName="kayitAnketId" />
+          <ScalarProperty Name="kayitKatId" ColumnName="kayitKatId" />
+          <ScalarProperty Name="kayitKulId" ColumnName="kayitKulId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="DB03Model.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="kulId" ColumnName="kulId" />
+          <ScalarProperty Name="kulNo" ColumnName="kulNo" />
+          <ScalarProperty Name="kulAdsoyad" ColumnName="kulAdsoyad" />
+          <ScalarProperty Name="kulTarih" ColumnName="kulTarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
